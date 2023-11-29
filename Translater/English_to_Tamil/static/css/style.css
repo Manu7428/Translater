@@ -1,0 +1,21 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label_tag{
+    font-size: 30px;
+    font-weight: bold;
+}
+.input_tag{
+    width: 230px;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/707582/pexels-photo-707582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.switch{
+    background-color: pink;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+}

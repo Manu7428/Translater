@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translater</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="box">
+        <form action="{% url 'path' %}" method="post">
+            {% csrf_token %}
+            <label for="word" class="label_tag">Enter Your word</label><br><br>
+            <input type="text" name="word_name" class="input_tag" id="word"><br><br>
+            <button type="submit" class="switch">Translater</button>
+        </form>
+    </div>
+    
+    <ul>
+        {% for i in values %}
+           <li>{{i}}</li>
+        {% endfor %}
+    </ul>
+    
+    
+</body>
+</html>
